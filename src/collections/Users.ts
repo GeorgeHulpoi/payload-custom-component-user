@@ -4,6 +4,9 @@ export const Users: CollectionConfig = {
   slug: 'users',
   admin: {
     useAsTitle: 'email',
+    components: {
+      beforeListTable: ['./src/collections/Component.tsx'],
+    },
   },
   auth: true,
   fields: [
